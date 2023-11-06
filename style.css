@@ -1,0 +1,275 @@
+@import 'utilities.css';
+
+:root{
+    --primary: #3dcfd3;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --ternary: #898989;
+    --light: #F2F2F2;
+    --secondary:#070606;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotting:antialiased; /*for font smooting*/
+    
+}
+
+
+header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+   
+    
+}
+
+.container{
+    max-width: 1152px ;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+   margin-right: 2rem;
+   text-transform: uppercase;
+   transform: 3s;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+
+.hero img{
+    width: 200px;
+    margin-right: 300px;
+    
+}
+
+.hero .right{
+    color: var(--pure);
+}
+
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero .right h1 span{
+    color: var(--primary);
+}
+
+.hero .right p{
+    line-height: 1.9rem;
+    margin-bottom: 2rem;
+}
+
+.hero{
+    padding: 3rem, 0;
+}
+
+.hero .right{
+    margin-top: -5rem;
+}
+
+.hero .right{
+    padding-right: 100;
+}
+
+section{
+    padding: 6rem 0;
+
+}
+
+section.About-Me .about-me-img{
+    height: 420px;
+    width: 300px;
+}
+
+section.About-Me h1{
+    margin-bottom:  1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section.About-Me h1 span{
+    color: var(--primary);
+}
+
+section.About-Me h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+section.About-Me p{
+    font-family: 'lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+
+section.About-Me .social{
+    display: flex;
+
+}
+
+section.About-Me .social a{
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin-right: 0.6rem;
+    transition: all .3s;
+}
+
+section.About-Me .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+section.About-Me .social a:hover{
+    background-color: var(--primary);
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.4;
+}
+
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'lato', sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+
+
+section.services .card-wraper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-column: 1 / 3;
+    margin-top: 60px;
+    grid-auto-columns: 4rem;
+    grid-gap: 20px
+}
+
+
+section.services{
+    background-color: var(--light);
+}
+
+section.services .container p{
+    color: var(--dark);
+}
+
+section.services .card-wraper .card{
+    background: var(--pure);
+    padding: 2.5rem 1rem;
+    position: relative;
+    transition: all .3s ease;
+    margin-bottom: 20px;
+    
+}
+
+section.services .card-wraper .card img{
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+section.services .card-wraper .card h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+
+}
+
+section.services .card-wraper .card p{
+    font-family: 'lato' sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+section.services .card-wraper .card:hover{
+    background: var(--dark);
+}
+
+section.services .card-wraper .card:hover h2, section.services .card-wraper .card:hover p{
+    color: var(--pure);
+}
+
+section.services .card-wraper .card h2{
+    text-align: center;
+}
+
+section.services .card-wraper .card img{
+    background-color: var(--light) ;
+    /* border: 2px solid ; */
+
+}
+/* section.services .card-wraper .card .mobile {
+    text-align: center;
+
+} */
+
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/images/camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding-bottom: 14rem;
+    
+}
+
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'lato' sans-serif;
+}
+
+section.reviws .slider .slide p{
+   text-align: center;
+}
+
